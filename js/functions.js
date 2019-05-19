@@ -87,9 +87,9 @@ function startHeartAnimation() {
 //传入遇见时间
 function timeElapse(c) {
 	// open website page   in  current time
-	var e = Date();
+	var datenow =new Date();
 	//拿到毫秒数，除以i000 拿到秒数
-	var f = (Date.parse(e) - Date.parse(c)) / 1000;
+	var f = (Date.parse(datenow) - Date.parse(c)) / 1000;
 	//天数 一天 是 24*3600秒，拿到天数 并下舍入
 	var g = Math.floor(f / (3600 * 24));
 	// 
