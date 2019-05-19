@@ -86,8 +86,11 @@ function startHeartAnimation() {
 })(jQuery);
 
 function timeElapse(c) {
+	// current time
 	var e = Date();
+	//作差
 	var f = (Date.parse(e) - Date.parse(c)) / 1000;
+	//天数
 	var g = Math.floor(f / (3600 * 24));
 	f = f % (3600 * 24);
 	var b = Math.floor(f / 3600);
