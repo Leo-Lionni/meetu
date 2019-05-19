@@ -87,9 +87,9 @@ function startHeartAnimation() {
 //传入遇见时间
 function timeElapse(c) {
 	// open website page   in  current time
-	var datenow =new Date();
+	//var datenow =new Date();
 	//拿到毫秒数，除以i000 拿到秒数
-	var f = (Date.parse(datenow) - Date.parse(c)) / 1000;
+	var f = (Date.parse("2019/05/19") - Date.parse(c)) / 1000;
 	//天数 一天 是 24*3600秒，拿到天数 并下舍入
 	var g = Math.floor(f / (3600 * 24));
 	// 
@@ -111,6 +111,9 @@ function timeElapse(c) {
 	var a = '<span class="digit">' + g + '</span> days <span class="digit">' 
 	// b + '</span> hours <span class="digit">' + d + '</span> minutes <span class="digit">' + f + "</span> seconds";
 	$("#elapseClock").html(a)
+	var datenow  = new Date()
+
+
 }
 
 function showMessages() {
